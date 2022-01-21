@@ -8,9 +8,12 @@
 }
 
 body {
-  color: var(--main-text-color);
+  color:white;
   position: relative;
   background: var(--main-background-color);
+  background-image: url(media/back2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -29,6 +32,7 @@ nav {
   width: 100%;
   height: var(--nav-height);
   transition: height 0.2s ease-in-out;
+  color: white;
 }
 
 .nav-container {
@@ -40,6 +44,7 @@ nav {
   padding-right: 20px;
   max-width: 900px;
   margin: auto;
+  color: white;
 }
 
 .nav-logo {
@@ -48,7 +53,7 @@ nav {
 
 nav a {
   font-size: var(--nav-logo-font-size);
-  color: var(--nav-link-color);
+  color: white;
   text-decoration: none;
 
   padding: 20px;
@@ -177,6 +182,7 @@ nav a:hover {
 
 .pb-3 {
   padding-bottom: 30px;
+  color: black;
 }
 
 .pb-4 {
@@ -220,9 +226,9 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   padding: 20px;
-  margin: 40px auto;
+  margin: 20px auto;
   max-width: 900px;
 }
 
@@ -259,7 +265,7 @@ header {
 .card {
   align-items: center;
   border-radius: var(--card-border-radius);
-  padding: 40px;
+  padding: 20px;
   background: var(--card-background-color);
   box-shadow: var(--card-shadow);
 }
@@ -278,6 +284,7 @@ header {
   padding-right: 20px;
   max-width: 900px;
   margin: auto;
+  text-align: center;
 }
 
 .mints-available {
@@ -349,3 +356,50 @@ header {
 }
 
 
+/* My codes */
+.teamCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  align-content: space-between;
+  align-items: center;
+}
+
+.card {
+  /* padding: 20px; */
+  margin: 10px;
+}
+
+.card > img {
+  height: 8rem;
+  width: 18rem;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: auto;
+  /* width: 10px; */
+  text-align: center;
+}
+
+.About {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+.Content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+
+}

@@ -1,4 +1,7 @@
 import "./App.css";
+import cat from './media/cat.jpg';
+import cat2 from './media/cat2.jpg';
+import NFT6 from './media/NFT6.jpg';
 import { useMemo } from "react";
 
 import Minter from "./Minter";
@@ -66,23 +69,23 @@ const App = () => {
             <img className="mobile-nav-logo" src="/img/logo.png" alt="" />
           </li>
           <li>
-            <a href="/#link1" onClick={toggleMenu}>
-              Link 1
+            <a href="/#Home" onClick={toggleMenu}>
+              Home
             </a>
           </li>
           <li>
-            <a href="/#link2" onClick={toggleMenu}>
-              Link 2
+            <a href="/#About Us" onClick={toggleMenu}>
+              About Us
             </a>
           </li>
           <li>
-            <a href="/#link3" onClick={toggleMenu}>
-              Link 3
+            <a href="/#content" onClick={toggleMenu}>
+              Content
             </a>
           </li>
           <li>
-            <a href="/#link4" onClick={toggleMenu}>
-              Link 4
+            <a href="/#Team" onClick={toggleMenu}>
+              Team
             </a>
           </li>
           <li>
@@ -99,17 +102,17 @@ const App = () => {
       <nav>
         <div className="nav-container">
           <img className="nav-logo" src="/img/logo.png" alt="" />
-          <a className="hide-800" href="/#link1">
-            Link 1
+          <a className="hide-800" href="/#Home">
+            Home
           </a>
-          <a className="hide-800" href="/#link2">
-            Link 2
+          <a className="hide-800" href="/About">
+            About Us
           </a>
-          <a className="hide-800" href="/#link3">
-            Link 3
+          <a className="hide-800" href="/#Content">
+            Content
           </a>
-          <a className="hide-800" href="/#link4">
-            Link 4
+          <a className="hide-800" href="/#Team">
+            Team
           </a>
           <div className="social-icons hide-800">
             <img className="nav-social" src="/icons/twitter.svg" alt="" />
@@ -121,7 +124,7 @@ const App = () => {
           <header className="card" id="link1">
             <div style={{ padding: "0 24px 0 24px 0" }}>
               <h3 className="text-secondary-color">Welcome To</h3>
-              <h1 className="pb-3">The Boiler Plate</h1>
+              <h1 className="pb-3">The NinjaCats</h1>
               <p className="text-secondary-color">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 scelerisque ipsum non est porta mollis. Donec sapien sapien, dictum
@@ -152,25 +155,118 @@ const App = () => {
             </div>
           </header>
 
-          <div id="link2" className="container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
-            aliquet, semper sapien sed, ornare augue. Phasellus sed velit interdum,
-            sagittis metus quis, facilisis lectus. Cras sollicitudin purus at magna
-            eleifend maximus. Nulla nec nulla in nunc maximus viverra in at mauris.
-            Fusce sodales dolor nisi, et vehicula orci porta id. In placerat nunc
-            sed erat lacinia tincidunt. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Vestibulum commodo eget metus vitae tempus. Aliquam
-            pharetra mi at efficitur accumsan. Curabitur venenatis libero a ex
-            porttitor, at auctor turpis hendrerit. Nam commodo, risus non consequat
-            pretium, erat ante auctor purus, a cursus dolor erat at velit. Maecenas
-            dignissim, dolor sed laoreet aliquam, tortor lacus faucibus urna, eget
-            mattis massa sem ac dui. Nam semper hendrerit interdum. Etiam at dictum
-            nisi.
+          <div className="container" id="Content">
+            <h1 className="text-center">Content</h1>
+            <div className="row">
+              <div className="teamCard">
+                <div className="card mx-auto">
+                  <img src={cat} className="card-img-top" alt="CEO" style={{width: `15rem` }} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+                <div className="card mx-auto">
+                  <img src={cat2} className="card-img-top" alt="CEO" style={{width: `15rem`}} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+                <div className="card mx-auto">
+                  <img src={NFT6} className="card-img-top" alt="CEO" style={{width: `15rem`}} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+       
+
+          <div className="container" id="About">
+            <h1 className="text-center">About Us</h1>
+            <div className="row">
+              <div className="teamCard">
+                <div className="card mx-auto">
+                  <img src={cat} className="card-img-top" alt="CEO" style={{width: `15rem` }} />
+                  <div className="card-body">
+                    <h5 className="card-title"></h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+                <div className="card mx-auto">
+                  <img src={cat2} className="card-img-top" alt="CEO" style={{width: `15rem`}} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+                <div className="card mx-auto">
+                  <img src={NFT6} className="card-img-top" alt="CEO" style={{width: `15rem`}} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
 
-          <div id="link3" className="container card">
-            <h1 className="pb-3">Lorem ipsum</h1>
+
+          <div className="container" id="Team">
+            <h1 className="text-center">Team</h1>
+            <div className="row">
+              <div className="teamCard">
+                <div className="card mx-auto">
+                  <img src={cat} className="card-img-top" alt="CEO" style={{width: `15rem` }} />
+                  <div className="card-body">
+                    <h5 className="card-title"></h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+                <div className="card mx-auto">
+                  <img src={cat2} className="card-img-top" alt="CEO" style={{width: `15rem`}} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+                <div className="card mx-auto">
+                  <img src={NFT6} className="card-img-top" alt="CEO" style={{width: `15rem`}} />
+                  <div className="card-body">
+                    <h5 className="card-title">Team memeber 1</h5>
+                    <p className="card-text">The CEO</p>
+                    <a href="https://twitter.com/CryptoBoil?t=BoU5KDjJVg_ab3bXxmkYmg&s=09" className="btn btn-primary">twitter</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
+       
+          
+          <div id="link3" className="container card">
+            <h1 className="pb-3">Lorem ipsum</h1>         
+</div>
+
 
           <div id="link4" className="container faq">
             <h1 style={{ padding: "0 0 24px 0" }}>FAQ</h1>
